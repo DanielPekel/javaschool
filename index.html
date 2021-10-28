@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Memory</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-family: 'sans-serif';
+            font-size: 25px;
+            color: white;
+        }
+
+        .memoryContainer {
+            width: 240px;
+            height: 600px;
+            border: 1px solid #E9E9E9;
+            margin: auto;
+            background-color: #666;
+        }
+
+        .memoryCard {
+            width: 100px;
+            height: 100px;
+            background-color: #0099FF;
+            margin: 10px;
+            border: 1px solid #999999;
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+            float: left;
+        }
+    </style>
+    <script src="assets/js/script.js">
+
+    </script>
+</head>
+<body onload="shuffleCards()">
+
+<div id="memoryCards" class="memoryContainer">
+    <h1>Memory</h1>
+    <input type="button" value="" id="kaart1" class="memoryCard" onclick="checkClickedCard(1, 'kaart1');"/>
+    <input type="button" value="" id="kaart2" class="memoryCard" onclick="checkClickedCard(2, 'kaart2');"/>
+    <input type="button" value="" id="kaart3" class="memoryCard" onclick="checkClickedCard(3, 'kaart3');"/>
+    <input type="button" value="" id="kaart4" class="memoryCard" onclick="checkClickedCard(4, 'kaart4');"/>
+    <input type="button" value="" id="kaart5" class="memoryCard" onclick="checkClickedCard(1, 'kaart5');"/>
+    <input type="button" value="" id="kaart6" class="memoryCard" onclick="checkClickedCard(2, 'kaart6');"/>
+    <input type="button" value="" id="kaart7" class="memoryCard" onclick="checkClickedCard(3, 'kaart7');"/>
+    <input type="button" value="" id="kaart8" class="memoryCard" onclick="checkClickedCard(4, 'kaart8');"/>
+</div>
+<div id="howManyClicks">
+    <p>je hebt <div id="total"></div>x geklikt</p>
+</div>
+</body>
+</html>
